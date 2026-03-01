@@ -1,0 +1,5 @@
+inv_env/
+*.pyc
+__pycache__/
+database/invoices.db
+.env
