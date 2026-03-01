@@ -9,7 +9,7 @@ def extract_invoice_data(image_path: str) -> dict:
     and store it in the database.
     """
     image = preprocess_invoice_image(image_path)
-    text = pytesseract.image_to_string(image, lang="eng")
+    text = pytesseract.image_to_string(image, lang="eng+ara")
     # Review Text 
     print("OCR text:\n", text)   
 
