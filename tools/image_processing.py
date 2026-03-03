@@ -1,3 +1,4 @@
+
 import cv2
 import numpy as np
 from PIL import Image
@@ -16,3 +17,4 @@ def preprocess_invoice_image(image_path: str) -> Image.Image:
     enhanced = clahe.apply(denoised)
     pil_img = Image.fromarray(enhanced)
     return pil_img
+    
